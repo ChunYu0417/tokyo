@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "openhuninn";
+  src: url("../font/openhuninn.woff") format("woff"), url("../font/openhuninn.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GenSenMaru";
+  src: url("../font/GenSenMaru.woff") format("woff"), url("../font/GenSenMaru.ttf") format("truetype");
+}
+* {
+  font-family: "openhuninn", "GenSenMaru", "Noto Sans TC", sans-serif;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.checkIn, .transportation, .timeline_info h5, .link a {
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: #666;
+  line-height: 24px;
+}
+
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.innerWrap {
+  width: 390px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a img,
+div img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*display: inline-block;*/
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #508ef9;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  background-color: #8dcdff;
+  color: #fff;
+}
+.link a + a {
+  margin-top: 10px;
+}
+
+.top_img {
+  padding-top: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.top_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  color: #508ef9;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+h1.home_title {
+  margin-top: 30px;
+  font-family: "Raleway";
+  font-size: 60px;
+  line-height: initial;
+  color: #508ef9;
+}
+
+.day {
+  position: relative;
+}
+.day h5 {
+  display: inline-block;
+  border-radius: 999em;
+  padding: 5px 20px;
+  background-color: #8dcdff;
+  color: #fff;
+}
+.day::before {
+  content: "";
+  height: 2px;
+  width: calc(100% - 85px);
+  background-color: #8dcdff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.travel_title {
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background-color: #508ef9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.travel_title p {
+  color: #fff;
+}
+
+.timeline {
+  margin-top: 30px;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #50b2af;
+  position: absolute;
+  left: 62px;
+  top: 10px;
+}
+
+.timeline_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.timeline_item + .timeline_item {
+  margin-top: 30px;
+}
+
+.timeline_time {
+  font-size: 16px;
+  width: 60px;
+  position: relative;
+}
+.timeline_time::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 999em;
+  background-color: #50b2af;
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.no_time {
+  opacity: 0;
+}
+
+.timeline_info {
+  width: calc(100% - 90px);
+  margin-left: 30px;
+}
+.timeline_info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.timeline_info h5 {
+  background-color: #eeeeef;
+}
+.timeline_info h5 span {
+  color: #f98050;
+  margin: 0 5px;
+}
+
+h3 + .transportation,
+h5 + .transportation {
+  margin-top: 15px;
+}
+
+.transportation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 45px;
+}
+.transportation > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+}
+.transportation span {
+  color: #fff;
+}
+.transportation p {
+  color: #fff;
+}
+.transportation p + p {
+  margin-left: 20px;
+  position: relative;
+}
+.transportation p + p::before {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background: url("../img/travel_arrow.svg") no-repeat;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.transportation.airplane {
+  background: url("../img/travel_airplane.svg") no-repeat, #50b2af;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.mrt {
+  background: url("../img/travel_mrt.svg") no-repeat, #6fae2f;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.fuji {
+  background: url("../img/travel_mrt.svg") no-repeat, #ff9b89;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.car {
+  background: url("../img/travel_car.svg") no-repeat, #50b2af;
+  background-size: 25px;
+  background-position: 12px center;
+}
+
+.transportation.maru {
+  background: url("../img/travel_mrt.svg") no-repeat, #ff3425;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.asakusa {
+  background: url("../img/travel_mrt.svg") no-repeat, #ff6481;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.hibiya {
+  background: url("../img/travel_mrt.svg") no-repeat, #a0a0a0;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.ginza {
+  background: url("../img/travel_mrt.svg") no-repeat, #ff7c01;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.yokosuka {
+  background: url("../img/travel_mrt.svg") no-repeat, #5d9fdd;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.enoden {
+  background: url("../img/travel_mrt.svg") no-repeat, #5fb569;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.toyoko {
+  background: url("../img/travel_mrt.svg") no-repeat, #ff3425;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.oedo {
+  background: url("../img/travel_mrt.svg") no-repeat, #a93a81;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.transportation.tozai {
+  background: url("../img/travel_mrt.svg") no-repeat, #3b96ac;
+  background-size: 20px;
+  background-position: 15px center;
+}
+
+.checkIn {
+  background: url("../img/travel_luggage.svg") no-repeat, #50b2af;
+  background-size: 20px;
+  color: #fff;
+  background-position: 15px center;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 8px 15px;
+  padding-left: 45px;
+}
+
+.bottom_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.home_btn {
+  width: 75px;
+  height: 75px;
+  margin: 0 20px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  border-radius: 999em;
+  background: url("../img/tokyo_home.svg") no-repeat, #8dcdff;
+  background-size: 20px;
+  background-position: center 15px;
+  border: none;
+}
+.home_btn::before {
+  content: "Home";
+  position: relative;
+  top: 10px;
+}
+
+.last_btn,
+.next_btn {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.last_btn {
+  background: url("../img/tokyo_left.svg") no-repeat, #8dcdff;
+  background-size: 18px;
+  background-position: 15px center;
+}
+
+.next_btn {
+  background: url("../img/tokyo_right.svg") no-repeat, #8dcdff;
+  background-size: 18px;
+  background-position: calc(100% - 15px) center;
+}
+
+@media screen and (max-width: 414px) {
+  .innerWrap {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
